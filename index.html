@@ -74,7 +74,34 @@
     <td>3$</td>
 </tr>
 </table>
+<p>When I go to these areas, these are the foods/items that I prefer to consume.</p>
 
-          <a href="aboutme.html">Aboutme</a>  
+<hr>
+<h4>Data Structures</h4>
+<blockquote>Data Structures are the programmatic way of storing data so that data can be used efficiently. 
+  Almost every enterprise application uses various types of data structures in one or the other way. 
+  This tutorial will give you a great understanding on Data Structures needed to understand the complexity of enterprise level applications and need of algorithms, and data structures.
+</blockquote>
+<a href="https://www.tutorialspoint.com/data_structures_algorithms/index.htm">Source</a> <br>
+
+<pre>void make_set(int v) {
+  parent[v] = v;
+}
+
+int find_set(int v) {
+  if (v == parent[v])
+      return v;
+  return find_set(parent[v]);
+}
+
+void union_sets(int a, int b) {
+  a = find_set(a);
+  b = find_set(b);
+  if (a != b)
+      parent[b] = a;
+}</pre>
+<a href="https://cp-algorithms.com/data_structures/disjoint_set_union.html">Source</a> <br>
+
+<a href="aboutme.html">Aboutme</a>  
         </body>
 </html>
